@@ -19,7 +19,7 @@
             <label for="first_name">Email</label>
             <input type="email" name="email" id="email" required>
             <label for="zip_code">Zip Code</label>
-            <input type="text" name="zip_code" id="zip_code" maxlength="6" required>
+            <input type="tel" pattern="[0-9]{6}" title="A six-digit number." placeholder="123456" required name="zip_code" id="zip_code" maxlength="6" required>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
             <label for="practicing_status">Practicing Status</label>
@@ -40,7 +40,7 @@
                 <option value="6" selected>Other</option>
             </select>
             <label for="years_of_experience">Years of experience</label>
-            <input type="number" name="years_of_experience" id="years_of_experience" min="0" max="60">
+            <input type="tel"  name="years_of_experience" id="years_of_experience" min="0" max="60">
             <label class="ethnicity-label" for="ethnicity">Ethnicity</label>
             <div class="ethnicity-rg">
                 <input type="radio" name="ethnicity" value="earthling">Earthling
