@@ -33,7 +33,7 @@ body {
 .gallery {
     width: 935px;
     display: grid;
-    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
     grid-template-columns: repeat(3,auto);
     justify-content: space-between;
     align-items: center;
