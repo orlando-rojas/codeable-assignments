@@ -88,3 +88,7 @@ a {
     color: #fff;
 }
 
+#real-input {
+    border: none;
+    width: 85%;
+}
