@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+section {
+    width: 263px;
+}
+
+span {
+    color: #0AD9C6;
+    font-size: 28px;
+    letter-spacing: -1.27273px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    color: #000;
+    font-weight: bold;
+    margin: 3px 0 6px 0;
+}
+
+p {
+    color: #7A7A7A;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
