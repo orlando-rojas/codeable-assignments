@@ -15,6 +15,7 @@ body {
 .gallery img {
     width: 295px;
     height: 293px;
+    margin-bottom: 19px;
 }
 
 .title {
@@ -31,7 +32,6 @@ body {
 
 .gallery {
     width: 935px;
-    height: 605px;
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3,auto);
