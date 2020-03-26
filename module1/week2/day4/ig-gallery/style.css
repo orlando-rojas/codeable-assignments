@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 295px;
+    height: 293px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.gallery {
+    width: 935px;
+    height: 605px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-between;
+    align-items: center;
+}
