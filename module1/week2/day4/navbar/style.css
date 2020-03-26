@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica';
+    background-color: #E5E5E5;
+}
+
+header {
+    background-color: #000;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 274px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 207px;
+}
+
+.input{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    height: 24px;
+    background-color: #fff;
+}
+
+.fa-search {
+    color: #000;
+    justify-self: start;
+    margin-left: 9px;
+} 
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 188px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+nav ul li {
+    font-size: 12px;
+    align-self: center;
+    margin: 12px 0px;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 12px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+#btn-login {
+    color: #fff;
+    background-color: #000;
+}
+
+#btn-login i {
+    margin-right: 5px;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
