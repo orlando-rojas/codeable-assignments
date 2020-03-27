@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+}
+
+main {
+    display: grid;
+    grid-template: 123px 465px 157px 100px / 175px 600px;
+    grid-gap: 32px 24px;
+    grid-template-areas:
+      ". header"
+      "sidebar app"
+      ". app"
+      ". footer";
+}
+
+div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #c4c4c4;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ff0000;
+}
+
+.app {
+    grid-area: app;
+    background-color: #20e056;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #c4c4c4;
+}

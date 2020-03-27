@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template: 100px auto 100px/ 100px 1fr;
+    grid-template-areas:
+      "navbar navbar"
+      "sidebar app"
+      "sidebar footer";
+}
+
+div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #ff5e5e;
+}
+
+.app {
+    grid-area: app;
+    background-color: #20e056;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #faff00;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #c4c4c4;
+}
