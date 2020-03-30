@@ -10,7 +10,6 @@ int main(void)
     int palabras = 1;
     int oraciones = 0;
 
-//count words
     for (int i = 0; i < strlen(text); i++)
     {
        if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
