@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    padding-top: 65px;
+    margin: 0 150px;
+    display: grid;
+    column-gap: 104px;
+    row-gap: 150px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+    "hero-description hero-list hero-list hero-list"
+    "features-img features-img features-list features-list";
+}
+
+.hero-description {
+    grid-area: hero-description;
+    min-width: 288px;
+}
+
+.hero-description h2 {
+    font-weight: bolder;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.hero-description p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 31px;
+    color: #666666;
+}
+
+.hero-info-list {
+    grid-area: hero-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-item {
+    width: 40%;
+    margin-bottom: 62px;
+}
+
+.info-item h3{
+    margin-top: 8px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+}
+
+.info-item p {
+    max-width: 262px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7A7A;
+}
+
+.features-img {
+    grid-area: features-img;;
+}
+
+.features-img img {
+    min-width: 555px;
+    max-width: 100%;
+    min-height: 463px;
+}
+
+.features-list {
+    max-height: 463px;
+    grid-area: features-list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.features-list h2 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -1.5px;
+    color: #000000;
+}
+
+.features-item h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 2px;
+}
+
+.features-item h3::before {
+    content: url(images/shape.png);
+    margin-right: 22px;
+    height: 100%;
+}
+
+.features-item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7A7A;
+}
+
+
+/*tablet*/
+@media screen and (min-width: 769px) and (max-width: 1439px){
+    .container {
+        padding-top: 25px;
+        margin: 0 25px;
+        display: grid;
+        column-gap: 15px;
+        row-gap: 55px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "hero-description hero-list hero-list hero-list"
+        "features-img features-img features-img features-img"
+        "features-list features-list features-list features-list";
+    }
+
+    .hero-description{
+        max-width: 280px;
+    }
+
+    .hero-description h2 {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -1px;
+    }
+
+    .hero-description p {
+        font-size: 17px;
+        line-height: 31px;
+    }
+
+    .info-item {
+        width: 50%;
+    }
+
+    .info-item p {
+        max-width: 200px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .features-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        text-align: center;
+        padding-top: 22px;
+        margin: 0 23px;
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "hero-description"
+        "hero-list"
+        "features-list"
+        "features-img";
+    }
+
+    .hero-description {
+        margin: 0 auto;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero-description h2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -1px;
+       
+    }
+
+    .hero-description p {
+    }
+
+    .hero-info-list{
+        display: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
