@@ -17,7 +17,8 @@ i {
   /* margin: 10px; */
 }
 
-footer {
+ul {
+  list-style: none;
   position: absolute;
   margin-top: 270px;
   background: #fff;
@@ -90,9 +91,11 @@ i:hover {
 }
 
 .fa-plus-circle {
+  transition: 1s;
 }
 
-.fa-plus-circle:hover {
+.mid:hover .fa-plus-circle {
+  transform: translateY(-10px) rotateZ(30deg);
 }
 
 .stop {
