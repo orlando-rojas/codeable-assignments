@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  
+  i {
+    font-size: 2em;
+    margin: 5px;
+  }
+  
+  .icons {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    background-color: white;
+  }
+  
+  i:hover {
+    background: linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .fa-instagram {
+    font-size: 1.5em;
+  }
+  
+  .ig2 {
+    align-self: baseline;
+  }
+
+  .fa-plus-square {
+    transition: 1s;
+    position: absolute;
+    z-index: 99;
+  }
+
+
+.mid:hover .semi {
+    /*transform: rotateX(30deg) translatey(-60px) translateX(-50px);*/
+    transform: rotateY(180deg) translateY(-60px) translateX(50px);
+}
+
+.mid:hover .fa-plus-square{
+    transform: rotate(-30deg) translateY(-30px);
+    background: linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.semi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    width: 100px; 
+    height: 50px; 
+    border: 1px solid #555; 
+    border-bottom: none;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
+    transform: rotateX(180deg) translateX(-30px);
+    padding-left: -s50px;
+    z-index: -1;
+    background-color: white;
+    transition: 2s;
+  }
+  

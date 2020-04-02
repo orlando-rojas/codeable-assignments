@@ -30,6 +30,7 @@ a {
 }
 
 .dropdown {
+    transform: scale(0);
     margin-top: 40px;
     width: 200px;
     background-color: #fff;
@@ -50,13 +51,20 @@ a {
 
 .navbar ul li:hover {
     color: #64B0FF;
-    border-bottom: 1px solid #64B0FF;
+    border-bottom: 2px solid #1990FE;
 }
 
 .navbar ul li:hover a {
-    color: #64B0FF;
+    color: #1990FE;
 }
 
 .dd-wrapper:hover .dropdown {
     display: block !important;
+    animation: drop 1s forwards;
+}
+
+@keyframes drop {
+    100% {
+        transform: scale(1);
+    }
 }
