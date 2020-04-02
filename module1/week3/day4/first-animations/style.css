@@ -10,7 +10,7 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    /*animation: rotate 2.0s infinite linear;*/
+    animation: rotate 2.0s infinite linear;
 }
 
 @keyframes rotate {
