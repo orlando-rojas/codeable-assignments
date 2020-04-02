@@ -2,15 +2,62 @@
     margin: 0;
     padding: 0;
 }
-.spinner {
-    display:flex;
-    justify-content: center;
+
+body{
+    height: 100vh;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+    justify-content: center;
+}
+
+.spinner {  
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    position: relative;
     animation: rotate 2.0s infinite linear;
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+}
+
+.dot {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.list li:nth-child(1){
+    transform: rotate(85deg);
+}
+
+.list li:nth-child(2){
+    transform: rotate(125deg);
+}
+
+.list li:nth-child(3){
+    transform: rotate(165deg);
+}
+.list li:nth-child(4){
+    transform: rotate(205deg);
+}
+.list li:nth-child(5){
+    transform: rotate(245deg);
+}
+.list li:nth-child(6){
+    transform: rotate(285deg);
+}
+.list li:nth-child(7){
+    transform: rotate(325deg);
+}
+.list li:nth-child(8){
+    transform: rotate(365deg);
+}
+.list li:nth-child(9){
+    transform: rotate(405deg);
 }
 
 @keyframes rotate {
