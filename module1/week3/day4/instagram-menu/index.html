@@ -8,19 +8,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <ul class="icons">
-    <li><i class="fa fa-home"></i></li>
-    <li><i class="fa fa-search"></i></li>
-    <li class="mid">
-        <i class="fa fa-plus-square"></i>
-        <ul class="semi">
-            <i class="fa fa-instagram ig1"></i>
-            <i class="fa fa-instagram ig2"></i>
-            <i class="fa fa-instagram ig3"></i>
-          </ul>
-    </li>
-    <li><i class="fa fa-heart"></i></li>
-    <li><i class="fa fa-user"></i></li>
-  </ul>
+  <div class="wrapper">
+    <div class="semi-circulo stop" id="semi">
+      <i class="fab fa-instagram ig1"></i>
+      <i class="fab fa-instagram ig2"></i>
+      <i class="fab fa-instagram ig3"></i>
+    </div>
+    <div class="semi-circulo shadow stop" id="shadow"></div>
+  </div>
+
+
+  <footer>
+    <i class="fa fa-home active"></i>
+    <i class="fa fa-search"></i>
+    <i class="fa fa-plus-circle" id="circle"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
+
+  </footer>
+  <script>
+    let circle = document.getElementById("circle");
+    circle.addEventListener("mouseover", function(){
+      let shadow = document.getElementById("shadow");
+      let semi = document.getElementById("semi");
+      semi.classList.remove("stop");
+      shadow.classList.remove("stop");
+    })
+
+  </script>
 </body>
 </html>
