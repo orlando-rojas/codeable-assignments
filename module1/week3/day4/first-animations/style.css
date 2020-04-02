@@ -11,11 +11,6 @@ body{
 }
 
 .spinner {  
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background-color: transparent;
-    position: relative;
     animation: rotate 2.0s infinite linear;
 }
 
@@ -26,8 +21,8 @@ body{
 
 .dot {
     position: absolute;
-    top: -50px;
-    left: -50px;
+    top: -40px;
+    left: -40px;
 }
 
 .list li:nth-child(1){
