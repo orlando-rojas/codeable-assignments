@@ -11,12 +11,11 @@ body{
 }
 
 .spinner {  
-    animation: rotate 2.0s infinite linear;
+    animation: rotate 1.5s infinite linear;
 }
 
 .list {
     list-style: none;
-    position: absolute;
 }
 
 .dot {
@@ -56,6 +55,7 @@ body{
 }
 
 @keyframes rotate {
+
     100% {
         transform: rotate(360deg);
     }
